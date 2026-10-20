@@ -35,10 +35,11 @@ $$V_{filtrado} = \frac{1}{N} \sum_{i=1}^{N} V_{ADC}[i]$$
 $$\text{Desviación} = \vert{}V_{filtrado} - V_{base}\vert{}$$
 
 ### 2. Algoritmo de Histéresis
-
-Para la detección robusta de vehículos sobre las plazas, el cambio de estado de detección utiliza dos umbrales diferenciados:
+Para la detección robusta de vehículos sobre las plazas, el cambio de estado de detección utiliza dos umbrales diferenciados[cite: 1]:
 
 $$\text{Estado}_{k} = \begin{cases} \text{OCUPADO}, & \text{si } \text{Desviación} > \text{UMBRAL\_DESVIACION} \quad (\text{si estaba LIBRE}) \\ \text{LIBRE}, & \text{si } \text{Desviación} < \text{UMBRAL\_HISTERESIS} \quad (\text{si estaba OCUPADO}) \end{cases}$$
+
+Esta lógica de doble umbral evita el parpadeo (*chattering*) del sensor cuando el valor analógico fluctúa cerca del límite de detección por interferencias electromagnéticas o vibraciones menores[cite: 1].
 
 ---
 
