@@ -2,6 +2,9 @@
 
 Un sistema IoT integral basado en el microcontrolador **ESP32** para la automatización, gestión y monitoreo en tiempo real de plazas de estacionamiento y control de acceso mediante barreras vehiculares servomotorizadas.
 
+<img width="1600" height="900" alt="WhatsApp Image 2026-10-20 at 12 59 29 PM" src="https://github.com/user-attachments/assets/d8446898-ed79-48bf-b938-b3998aad9707" />
+
+
 ---
 
 ## 🚀 Características Principales
