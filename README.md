@@ -77,7 +77,7 @@ $$\text{Estado}_{k} = \begin{cases} \text{OCUPADO}, & \text{si } \text{Desviacio
 
 1. Clona este repositorio:
 ```bash
-git clone https://github.com/Azazel-bt/Parqueadero-Inteligente-ESP32.git
+git clone https://github.com/Azazel-bt/Sistema-de-Parqueadero-Inteligente-con-ESP32-e-Interfas-grafica.git
 
 ```
 
