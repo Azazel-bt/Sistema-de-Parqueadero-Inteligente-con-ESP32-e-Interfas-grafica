@@ -9,6 +9,9 @@ Un sistema IoT integral basado en el microcontrolador **ESP32** para la automati
 
 ## 🚀 Características Principales
 
+<img width="988" height="778" alt="image" src="https://github.com/user-attachments/assets/1491cb5a-f262-4b4e-a49b-9bcb6329797a" />
+
+
 * **Monitoreo en Tiempo Real:** Detección de presencia en 4 plazas de estacionamiento independientes mediante sensores de efecto Hall analógicos.
 
 
