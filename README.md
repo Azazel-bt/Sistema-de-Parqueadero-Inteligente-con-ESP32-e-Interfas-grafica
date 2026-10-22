@@ -100,6 +100,40 @@ git clone https://github.com/Azazel-bt/Sistema-de-Parqueadero-Inteligente-con-ES
 6. Abre tu navegador e ingresa a la dirección IP por defecto: `[http://192.168.4.1](http://192.168.4.1)`.
 
 
+## 🔌 Diagrama de Conexiones (ESP32 y Componentes)
+
+```text
+ ╔═════════════════════════════════════════════════════════════════════╗
+ ║                         FUENTE EXTERNA 5V                           ║
+ ║  [+] 5V ───────────────────────────────────► Riel Positivo Protoboard  ║
+ ║  [-] GND ──┬──────────────────────────────► Riel Negativo Protoboard  ║
+ ╚═════════════════════════════════════════════════════════════════════╝
+              │
+              ▼ (CABLE DE TIERRA COMÚN OBLIGATORIO)
+ ╔═════════════════════════════════════════════════════════════════════╗
+ ║                              ESP32                                  ║
+ ║                                                                     ║
+ ║  GND   ◄──────────────────────────────────┘                         ║
+ ║  3.3V  ──────────────────────────► Alimentación sensores Hall (VCC)   ║
+ ║                                                                     ║
+ ║  GPIO 34 ◄────────────────────── Sensor Hall Plaza 1 (Pin central)  ║
+ ║  GPIO 35 ◄────────────────────── Sensor Hall Plaza 2 (Pin central)  ║
+ ║  GPIO 32 ◄────────────────────── Sensor Hall Plaza 3 (Pin central)  ║
+ ║  GPIO 33 ◄────────────────────── Sensor Hall Plaza 4 (Pin central)  ║
+ ║  GPIO 36 ◄────────────────────── Sensor Hall Entrada   (Pin central)  ║
+ ║  GPIO 39 ◄────────────────────── Sensor Hall Salida    (Pin central)  ║
+ ║                                                                     ║
+ ║  GPIO 4  ──────────────────────► [Resistencia 220Ω] ──► LED Plaza 1 ║
+ ║  GPIO 5  ──────────────────────► [Resistencia 220Ω] ──► LED Plaza 2 ║
+ ║  GPIO 21 ──────────────────────► [Resistencia 220Ω] ──► LED Plaza 3 ║
+ ║  GPIO 22 ──────────────────────► [Resistencia 220Ω] ──► LED Plaza 4 ║
+ ║                                                                     ║
+ ║  GPIO 18 ──────────────────────► Señal PWM Servo Entrada            ║
+ ║  GPIO 19 ──────────────────────► Señal PWM Servo Salida             ║
+ ╚═════════════════════════════════════════════════════════════════════╝
+
+
+
 
 ---
 
