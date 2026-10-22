@@ -132,7 +132,7 @@ git clone https://github.com/Azazel-bt/Sistema-de-Parqueadero-Inteligente-con-ES
  ║  GPIO 19 ──────────────────────► Señal PWM Servo Salida             ║
  ╚═════════════════════════════════════════════════════════════════════╝
 
-
+```
 
 
 ---
